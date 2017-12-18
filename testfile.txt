@@ -1,3 +1,0 @@
-This is test file.
-This is second string.
-This is another string.
