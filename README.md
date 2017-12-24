@@ -3,7 +3,7 @@
 
 ---
 
-[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.ua/)
+[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
 
 1. A
 2. B
