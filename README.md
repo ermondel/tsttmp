@@ -1,25 +1,5 @@
 # Repository for testing commands and training.
 
-sdfsdfsdf
-
----
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
----
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
----
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
----
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
-[![Foo](https://github.com/ermondel/tsttmp/blob/master/ims/big1_m.jpg)](https://github.com/ermondel/tsttmp/blob/master/ims/big1.jpg)
-
-1. A
-2. B
-3. C
-4. D
+*impressions*: I have learned a lot of new things. It was interesting.
+* Task 0 :  *There was everything new for me. I was surprised at the idea of branching. All studied will use in the future.*
+* Item 2
