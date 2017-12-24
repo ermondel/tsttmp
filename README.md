@@ -2,7 +2,8 @@
 
 
 ---
-[[asd](ims/big1_m.jpg)](ims/big1.jpg "this is text")
+
+[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.ua/)
 
 1. A
 2. B
