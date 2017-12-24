@@ -2,10 +2,7 @@
 
 
 ---
-***
-___
-
-<hr size="1" />
+[[this is text](ims/big1_m.jpg "this is text")](ims/big1.jpg)
 
 1. A
 2. B
