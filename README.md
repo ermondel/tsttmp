@@ -8,6 +8,6 @@ The player can move left, right, up and down (use ←, →, ↑, ↓. on keyboar
 Once a the player collides with an enemy, the game is reset and the player moves back to the start square. 
 Once the player reaches the water the game is won.
 
-### how to load and play
-#### online
+#### how to load and play
+##### online
 follow this link [ermondel.github.io/frogger/](https://ermondel.github.io/frogger/)
