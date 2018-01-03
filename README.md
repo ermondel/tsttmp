@@ -1,6 +1,9 @@
-# Repository for testing commands and training.
+Frogger-like game
+===============================
 
-*impressions*: I have learned a lot of new things. It was interesting.
-* Task 2: *I already familiar with Git from previous lessons. New for me: option log -w, git add . , git shortlog, tags, file CONTRIBUTING.md, Issues. Squash commits and git reset --hard (with options) surprised me. All studied I will to use in the future.*
-* Task 1: *Everything was new for me, I never worked with Linux in the past. I was surprised by the Vagrant program, the Linux file system, the access rights to files, ports, everything in networks, the structure of the HTTP protocol. All studied I will to use in the future, I hope :-)*
-* Task 0: *Everything was new for me. Branching surprised me. All studied I will to use in the future.*
+### Description
+In this game you have a Player and Enemies (Bugs). 
+The goal of the player is to reach the water, without colliding into any one of the enemies. 
+The player can move left, right, up and down (use ←, →, ↑, ↓. on keyboard).
+Once a the player collides with an enemy, the game is reset and the player moves back to the start square. 
+Once the player reaches the water the game is won.
