@@ -1,4 +1,8 @@
-#Parcel
+# Parcel
+
+ссылки
+* [getting started](https://parceljs.org/getting_started.html)
+* [habrahabr](https://habrahabr.ru/post/344486/)
 
 установим parcel
 ```
@@ -63,6 +67,7 @@ console.log(myconst);
 http://localhost:1234/
 ```
 можно еще что-нибудь поменять.
+
 
 
 На что обратить внимание:
