@@ -1,4 +1,4 @@
-# Простой сервер на node
+# Простой сервер на node плюс json
 
 требования
 * установленный где-нибудь в системе node
@@ -19,9 +19,15 @@ C:\Users\NeonPC\version-control
 ```
 идем в version-control, создаем там в корне js файл (например node.server.js), пишем в него
 ```
-var express = require('../nodejs/app/location/node_modules/express'), // путь к папке с модулями
-    app = express();
-app.use(express.static('.')); // вся текущая папка version-control
+var express = require('../nodejs/app/location/node_modules/express');  // путь к модулю express
+var options = {
+	setHeaders: function (res, path, stat) {
+		res.set('Access-Control-Allow-Origin', '*'); // обязательный заголовок для ответов json api
+	},
+};
+
+app = express();
+app.use(express.static('.', options));
 app.listen(8080);
 ```
 запускаем сервер
@@ -40,4 +46,19 @@ Cannot GET /
 ```
 http://localhost:8080/course-collaboration-travel-plans/
 ```
-Enjoy
+остановим сервер, сделаем структуру папок для отладки запросов по json api с других приложений
+```
+tsttmp
+| - myjson
+| | - weather-app
+| | | - daily.json
+```
+запускаем сервер, открываем путь в итоге увидим json ответ
+```
+http://localhost:8080/tsttmp/myjson/weather-app/daily.json
+```
+json ответ можно использовать из другого приложения, даже из запущенного parcel 
+(ибо теперь оба сервера хоть и запущенны одновременно, но слушают разные порты).
+```
+http://localhost:1234/
+```
