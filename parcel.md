@@ -68,10 +68,41 @@ http://localhost:1234/
 ```
 можно еще что-нибудь поменять.
 
+### Публикация
+Простой запуск parcel index.html приводит только к временной публикации, доступной по localhost:1234.
+
+Если же нужно выложить на гит-хаб и опубликовать демо, то нужно:
+
+создать файл .gitignore, куда добавить
+```
+.cache
+dist
+```
+потом проект собрать уже нормально (не временно) командой
+```
+parcel build ./src/index.html --no-minify --public-url ./
+```
+создаем локально у себя ветку gh-pages, на которой будем держать собраный опубликованый проект
+```
+git branch gh-pages
+git checkout gh-pages
+```
+удаляем все лишнее - оставляем только папку .git и в корне все файлы из папки dist и делаем коммит c описанием "clean";
+после чего пушим эту ветку на сервер
+```
+git push origin gh-pages
+```
+идем на гитхабе в настройки своего репозитория: Settings -> GitHub Pages, меняем в выпадающем списке Source с мастер на gh-pages и сохраняем изменения; у себя переключаемся обратно на основную ветку master
+```
+git checkout master
+```
+и пушим ее на сервер, если нужно.
 
 
 На что обратить внимание:
-* parcel все прогоняет через Babel, PostCSS, PostHTML
-* parcel на выходе рядом с index.html создаст папку dist, в которой сидят наш index.html и test-parcel.js
-* index.html внутри с `<script src="./index.js"></script>` поменяется на `<script src="/dist/test-parcel.js"></script>`
-* test-parcel.js это собраный файл, в котором все в одном сидят наши все скрипты в одном и прогнанные через Babel
+* parcel все прогоняет через Babel, PostCSS, PostHTML;
+* parcel на выходе рядом с index.html создаст папку dist, в которой сидят наш index.html и test-parcel.js;
+* index.html внутри с `<script src="./index.js"></script>` поменяется на `<script src="/dist/test-parcel.js"></script>`;
+* test-parcel.js это собраный файл, в котором все в одном сидят наши все скрипты в одном и прогнанные через Babel;
+* --no-minify команда чтобы не минимифицировать пока код;
+* --public-url ./ команда ставит корень сборки как / (а не /dist/ по умолчанию из-за чего стили не подключаются);
