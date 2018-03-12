@@ -1,0 +1,28 @@
+body { font-family: Arial; font-size: 14px; }
+main { width: 700px; margin-left: auto; margin-right: auto; position: relative; }
+/* */
+#form { margin-right: 215px; }
+#form input, button { margin: 0; padding: 0; border: none; 
+border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#form input[type=text] { background-color: #c0dece; padding: 0.7em 1em; }
+#form button { background-color: #33b526; padding: 0.7em 1em; }
+#form div { margin-top: 15px; }
+#form label { margin-right: 15px; cursor: pointer; }
+ul, li { margin: 0; padding: 0; list-style: none; }
+/* */
+#cubes { margin-top: 45px; margin-right: 215px; }
+#greencube { background-color: #12c400; width: 250px; height: 250px; padding: 50px; margin-bottom: 50px; color: white; font-size: 180%; 
+-webkit-box-shadow: 10px 10px 0px 3px rgba(29,96,22,1);
+-moz-box-shadow: 10px 10px 0px 3px rgba(29,96,22,1);
+box-shadow: 10px 10px 0px 3px rgba(29,96,22,1); }
+#bluecube { background-color: #487fc3; width: 250px; height: 250px; padding: 50px; margin-bottom: 50px; color: white; font-size: 180%;
+-webkit-box-shadow: 10px 10px 0px 3px rgba(41,77,120,1);
+-moz-box-shadow: 10px 10px 0px 3px rgba(41,77,120,1);
+box-shadow: 10px 10px 0px 3px rgba(41,77,120,1); }
+#redcube { background-color: #f13c3c; width: 250px; height: 250px; padding: 50px; margin-bottom: 50px; color: white; font-size: 180%;
+-webkit-box-shadow: 10px 10px 0px 3px rgba(190,118,118,1);
+-moz-box-shadow: 10px 10px 0px 3px rgba(190,118,118,1);
+box-shadow: 10px 10px 0px 3px rgba(190,118,118,1); }
+/* */
+#myhistory { top: 0; right: 0; position: absolute; padding: 10px; width: 180px; background-color: skyblue; 
+border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }

@@ -1,0 +1,23 @@
+body { font-family: Arial; font-size: 14px; }
+ul, li { margin:0; padding: 0; list-style-type: none; }
+
+#main { width: 600px; margin-left: auto; margin-right: auto; }
+
+#form { margin-bottom: 45px; color: orange; }
+#form div { margin-top: 10px; }
+#form input[type=text] { width: 81%; background-color: orange; border: none; padding: 1% 2%; }
+#form label { margin-right: 5%; }
+#form button { border: none; padding: 1% 2%; background-color: lightseagreen; }
+
+#search-results { width: 48%; margin-right: 2%; margin-top: 3%; float: left; }
+#search-results ul li { margin-bottom: 1em; }
+#search-results ul li a { color: lightseagreen; }
+#search-results ul li a:hover { text-decoration: none; color: red; }
+
+#search-history { width: 43%; padding: 3%; float: right; border: 1px solid lightgrey; 
+border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#search-history ul li { color: grey; margin-bottom: 1em; }
+#search-history ul li span.value { cursor: pointer; }
+#search-history ul li span.value:hover { text-decoration: underline; }
+#search-history ul li span.remove { color: red; cursor: pointer; }
+#search-history ul li span.remove:hover { text-decoration: underline; }
