@@ -20,11 +20,11 @@ const pizza_width  = 320;
 const pizza_height = 320;
 const pizzaRx = Math.round(pizza_width / 2);
 const pizzaRy = Math.round(pizza_height / 2);
-const pizza_border_offset = 35;
+const pizza_border_offset = 37;
 
 pizza.onload = function() {
 	// a) draw pizza
-	// context.drawImage(pizza, canvasRx - pizzaRx, canvasRy - pizzaRy, pizza_width, pizza_height);
+	context.drawImage(pizza, canvasRx - pizzaRx, canvasRy - pizzaRy, pizza_width, pizza_height);
 
 	// b) see borders and draw red circle
 	context.beginPath();
@@ -33,10 +33,13 @@ pizza.onload = function() {
     context.fill();
 
 	// c) get pixels
+	/*
 	const imageData = context.getImageData(canvasRx - pizzaRx, canvasRy - pizzaRy, pizza_width, pizza_height);
 	const data = imageData.data;
+	*/
 
 	// d) search coordinates of reds pixels
+	/*
 	reds = [];
 	for (let y = 0; y < pizza_height; y++) {
 		for (let x = 0; x < pizza_width; x++) {
@@ -44,6 +47,7 @@ pizza.onload = function() {
 			if (red === 255) reds.push(x+';'+y);
 		}
 	}
+	*/
 
 	// e) display results
 	// console.log(reds.length);
