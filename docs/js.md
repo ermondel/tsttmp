@@ -20,4 +20,24 @@ new Headers().append('Content-type', 'application/json')
 для fetch, она *НЕ* работает. 
 Вместо headers будет undefined. 
 Нужно хидеры *отдельной* переменной делать. 
-
+6) При работе с картинками (fetch, canvas и т.д.) может возникать ошибка CORS. Исправление: поставить аттрибут картинке crossOrigin в 'anonymous'.
+```
+image.crossOrigin = 'anonymous';
+```
+7) Может возникать ошибка 502 (и т.п) при работе с fetch. Причина: опечатка в значении content-type или вообще его нет.
+```
+headers.append('content-type', 'application/json');
+headers.append('content-type', 'multipart/form-data');
+```
+8) При работе с formData **не обязательно** указывать 
+```
+Content-Type: multipart/form-data 
+```
+в headers. Он его сам установит при присваиванни в body фетча.
+```
+{
+	method: 'POST',
+	headers,
+	body: formData,
+}
+```
